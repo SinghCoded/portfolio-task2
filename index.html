@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TK Singh's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add this CSS for fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <img src="images/image.jpg" alt="TK Singh" class="profile-image-header">
+            <h1 class="fade-in">Hello, I'm TK Singh 👋</h1>
+            <p class="fade-in">A passionate Web Developer and Traveler.</p>
+            <div class="buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="your-resume.pdf" class="btn secondary" download>Download Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="animated-bg">
+            <img src="images/your-gif.gif" alt="Animated Background" class="bg-gif">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2 class="fade-in">About Me</h2>
+            <p class="fade-in">I am a BCA student who loves traveling and programming. My passion for exploring the world and creating innovative web solutions fuels my creativity and problem-solving skills.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="fade-in">Skills</h2>
+        <ul class="skills-list fade-in">
+            <li>Web Development</li>
+            <li>Communication</li>
+            <li>Soft Skills</li>
+            <li>Vlogging</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="fade-in">Experience</h2>
+        <p class="fade-in">Web Development, Data Analysis, HR, and more.</p>
+    </section>
+
+    <!-- Travel Section -->
+    <section id="travel">
+        <h2 class="fade-in">Travel</h2>
+        <p class="fade-in"><strong>Visited Places:</strong> Darjeeling, Delhi, Sikkim, Uttarakhand, Bhopal</p>
+    </section>
+
+    <!-- Inspirational Quotes Section -->
+    <section id="inspiration">
+        <h2 class="fade-in">Inspirational Quotes</h2>
+        <blockquote class="fade-in">
+            "Travel opens your heart, broadens your mind, and fills your life with stories to tell."
+        </blockquote>
+        <blockquote class="fade-in">
+            "Software is a great combination of artistry and engineering."
+        </blockquote>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="fade-in">Contact Me</h2>
+        <p class="fade-in">Email: <strong>imrztk@gmail.com</strong></p>
+        <p class="fade-in">Phone: <strong>+91 1234567890</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TK Singh. All rights reserved.</p>
+        <p><a href="#about">Back to Top</a></p>
+    </footer>
+
+    <!-- JavaScript for Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, index * 300); // Delay each element's animation
+            });
+        });
+    </script>
+</body>
+</html>
